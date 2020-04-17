@@ -32,7 +32,7 @@ public class SwiftWcFlutterSharePlugin: NSObject, FlutterPlugin {
             let docsPath:String = NSSearchPathForDirectoriesInDomains(.cachesDirectory,.userDomainMask , true).first!
 //             let contentUri = NSURL(fileURLWithPath: docsPath).appendingPathComponent(fileName!)
             let contentUri = NSURL(fileURLWithPath: String(docsPath + fileName!))
-            contentToShare.append(contentUri!)
+            contentToShare.append(contentUri)
         }
         
         if (text != nil) {
